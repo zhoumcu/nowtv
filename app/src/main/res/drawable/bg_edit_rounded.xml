@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item>
+        <shape>
+            <padding android:left="14dp" android:right="14dp"/>
+            <stroke android:width="2dp" android:color="@color/bbutton_default" />
+            <corners android:radius="@dimen/bbuton_rounded_corner_radius" />
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+</selector>

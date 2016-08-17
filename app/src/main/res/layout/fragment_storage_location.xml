@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/setting_group_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_setting_phone"
+                style="@style/setting_linear_style">
+
+
+                <RadioButton
+                    android:id="@+id/rb_setting_phone"
+                    style="@style/setting_radiobutton_style"
+                    android:text="@string/setting_phone_memory" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_phone"
+                    style="@style/setting_checkbox_style" />
+            </LinearLayout>
+
+            <View style="@style/setting_divide_style" />
+
+            <LinearLayout
+                android:id="@+id/ll_setting_sdcard"
+                style="@style/setting_linear_style"
+                android:clickable="true">
+
+
+                <RadioButton
+                    android:id="@+id/rb_setting_sdcard"
+                    style="@style/setting_radiobutton_style"
+                    android:text="@string/setting_sdcard_memory" />
+
+                <CheckBox
+                    android:id="@+id/cb_setting_sdcard"
+                    style="@style/setting_checkbox_style" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

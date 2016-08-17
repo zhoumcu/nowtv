@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/round_bar_lay"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="@dimen/middle_padding"
+              android:visibility="gone">
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/round_bar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_color="@color/orange"
+        tl:tl_indicator_margin_bottom="0dp"
+        tl:tl_indicator_margin_left="0dp"
+        tl:tl_indicator_margin_right="0dp"
+        tl:tl_indicator_margin_top="0dp"
+        tl:tl_bar_stroke_color="@color/tab_bar_stroke"
+        tl:tl_textSelectColor="@color/themeColor"
+        tl:tl_textUnselectColor="@color/white"
+        tl:tl_textsize="10sp"/>
+</LinearLayout>

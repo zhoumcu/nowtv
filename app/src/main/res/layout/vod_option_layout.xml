@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:id="@+id/ll_options"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="2dp"
+    android:gravity="center_vertical|left">
+
+    <Button
+        android:id="@+id/bt_rent"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_round_selector"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/rent"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/iv_detail_play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_circle_play_selector"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_circle_download" />
+
+    <ImageView
+        android:id="@+id/iv_detail_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/iv_detail_play"
+        android:src="@drawable/ic_watchlist_off" />
+
+    <ImageView
+        android:id="@+id/iv_detail_screencast"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/iv_detail_play"
+        android:src="@drawable/ic_screen_cast_selector"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/btn_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_round_click_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/middle_padding"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_padding"
+            android:text="@string/subscribe" />
+    </LinearLayout>
+</LinearLayout>

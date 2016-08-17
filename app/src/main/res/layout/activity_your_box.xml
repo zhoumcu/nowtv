@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pccw.nowplayer.activity.settings.YourBoxActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/your_box_tips" />
+
+    <LinearLayout
+        android:id="@+id/ll_not_conn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/setting_group_color"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="25dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_add_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:text="@string/your_box_not_connected"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal"
+            android:text="@string/your_box_please_connect"
+            android:textAppearance="?android:attr/textAppearanceSmallInverse"
+            android:textColor="@color/now_grey" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/setting_group_color"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_vector_smart_object" />
+
+        <TextView
+            android:id="@+id/tv_account_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:text="@string/your_box_account_number"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bbuton_default_rounded"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/disconnect" />
+
+
+</LinearLayout>

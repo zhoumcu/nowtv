@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/setting_linear_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/setting_key_text_style"/>
+
+    <TextView
+        android:id="@+id/status"
+        style="@style/setting_value_text_style"/>
+
+    <ImageView style="@style/setting_arrow_style"/>
+</LinearLayout>

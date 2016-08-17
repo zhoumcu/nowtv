@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/setting_linear_style"
+        android:layout_marginBottom="@dimen/large_padding"
+        android:layout_marginTop="@dimen/large_padding"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_now_id"/>
+
+        <TextView
+            android:id="@+id/tv_now_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/setting_value"
+            android:textSize="@dimen/small_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_now_id"
+        style="@style/setting_linear_style">
+
+        <TextView
+            style="@style/setting_key_text_style"
+            android:text="@string/change_password"/>
+
+        <ImageView style="@style/setting_arrow_style"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_padding"
+        android:background="@drawable/btn_trans_round"
+        android:minHeight="40dp"
+        android:text="@string/log_out_now_id"
+        android:textAllCaps="false"/>
+</LinearLayout>

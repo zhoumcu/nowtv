@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_bg_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_success_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thank_you"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/success_rent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <include layout="@layout/view_rent_detail" />
+
+        <LinearLayout
+            android:id="@+id/ll_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_now_id_password"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/now_id_password"
+                android:inputType="textPassword"
+                android:textColorHint="#929292"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="@string/ve_remark"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#929292" />
+
+            <TextView
+                android:id="@+id/tv_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:autoLink="all"
+                android:linksClickable="false"
+                android:text="@string/ve_conditions"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#929292" />
+
+            <Button
+                android:id="@+id/bt_rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/white_round_click_bg"
+                android:text="@string/rent"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="69dp"
+                android:layout_marginTop="20dp"
+                android:text="Exp: Wed 8 Aug 2015 9:28 PM"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#929292"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_watch_now"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/bg_round_selector"
+                android:text="@string/want_now"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/buy_alert"
+
+                android:textColor="#929292" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/view_tool_bar" />
+</FrameLayout>

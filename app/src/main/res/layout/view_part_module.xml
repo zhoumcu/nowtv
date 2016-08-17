@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/middle_padding"
+        android:layout_marginRight="@dimen/middle_padding"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingTop="@dimen/small_padding">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/see_more"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontal_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/middle_padding"
+            android:tag="horizontal_list">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <include
+            layout="@layout/view_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="190dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

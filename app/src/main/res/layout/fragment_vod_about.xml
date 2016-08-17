@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_trailer"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_round_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trailer" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Trailer"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_synopsis"
+        style="@style/ll_vod_detail_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_sec_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter" />
+        <!--android:background="@drawable/bg_vod_level_selector" -->
+        <LinearLayout
+            android:id="@+id/ll_ends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ll_vod_detail_title"
+                android:text="@string/ends" />
+
+            <TextView
+                android:id="@+id/tv_ends_value"
+                style="@style/ll_vod_detail_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_director"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ll_vod_detail_title"
+                android:text="@string/directors" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_actors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ll_vod_detail_title"
+                android:text="@string/actors" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ll_vod_detail_title"
+                android:text="@string/languages" />
+
+            <TextView
+                android:id="@+id/tv_languages"
+                style="@style/ll_vod_detail_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ll_vod_detail_title"
+                android:text="@string/subtitle" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                style="@style/ll_vod_detail_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ll_vod_detail_title"
+                android:text="@string/duration" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                style="@style/ll_vod_detail_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_classification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ll_vod_detail_title"
+                android:text="@string/classification" />
+
+            <TextView
+                android:id="@+id/tv_classification"
+                style="@style/ll_vod_detail_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_available_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ll_vod_detail_title"
+                android:text="@string/available_on" />
+
+            <TextView
+                android:id="@+id/tv_available_on"
+                style="@style/ll_vod_detail_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

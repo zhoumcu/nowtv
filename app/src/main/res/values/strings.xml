@@ -1,0 +1,313 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">NowPlayer</string>
+    <string name="drawer_open">open draw</string>
+    <string name="drawer_close">close drawer</string>
+    <string name="on_demand">On Demand</string>
+    <string name="parental_control">Parental Control</string>
+    <string name="parental_control_tips">The selected program is locked as it contains adult content. Please enter your now ID password to unlock.</string>
+    <string name="input_pw">Enter your now ID password</string>
+    <string name="parental_confirm">I confirm I have attained the age of 18 and am a now TV subscriber.</string>
+    <string name="confirm">Confirm</string>
+    <string name="submit">Submit</string>
+    <string name="restricted">Content is restricted to persons above 18 years of age. </string>
+    <string name="is_locked">The following program is locked as it contains adult content.  </string>
+
+    <string name="restricted_tips">Before you watch a program which contains adult content for the first time,  we need to verify that you are a now TV subscriber, please provide the following info:</string>
+    <string name="enter_passport">Enter your passport / HKID</string>
+    <string name="now_id_tips">now ID:%s</string>
+    <string name="parental_activated">Parental Control is activated</string>
+    <string name="parental_alert_msg">Parental control is to prevent persons below 18 years of age from the program contains adult content.</string>
+    <string name="parental_alert_attention">Attention: Do not disclose your now ID password to anyone else. </string>
+    <string name="play">Play</string>
+
+    <string name="invalid_identity">Invalid document or document number. Please re-enter.</string>
+    <string name="incorrect_password">Incorrect now ID password. Please try again.</string>
+
+    <string name="confirm_18age">I confirm I have attained the age of 18 and am a now TV subscriber. </string>
+    <string name="confirm_submit_tips">The above personal information as submitted will only be used to verify your now TV subscriber identity. </string>
+    <string name="side_menu">side menu</string>
+    <string name="search">Search</string>
+    <string name="see_more"><![CDATA[See All >]]></string>
+    <string name="live_chat">Live Chat</string>
+    <string name="support">Subscription, Support</string>
+    <string name="home">Home</string>
+    <string name="my_now">My Now</string>
+    <string name="tv_guide">TV Guide</string>
+    <string name="on_demands">On Demand</string>
+    <string name="tv_remote">TV Remote</string>
+    <string name="more">More</string>
+    <string name="more_description">BPL Settings,More Apps</string>
+    <string name="pressagainToExit">Please click BACK again to exit</string>
+    <string name="network_error">Network error</string>
+    <string name="reconnect">Retry</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_video_index">VideoIndex</string>
+    <string name="title_activity_single_video">SingleVideo</string>
+    <string name="title_activity_setting">Settings</string>
+    <string name="title_activity_now_id">@string/setting_now_id</string>
+    <string name="title_activity_download_location">@string/setting_download_location</string>
+    <string name="title_activity_language">@string/setting_language</string>
+    <string name="title_activity_your_box">Your Box</string>
+    <string name="title_activity_now_dollar">Now Dollarss</string>
+    <string name="video_single_button_watch">Watch Now</string>
+    <string name="title_activity_tv_guide">TV Guide</string>
+    <string name="change_pwd">Change Password</string>
+    <string name="your_now_id">Your now ID</string>
+    <string name="your_box_tips">You connected nowTV Box</string>
+    <string name="your_box_not_connected">No nowTV Box Connected</string>
+    <string name="your_box_account_number">account number:%s</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="your_box_please_connect">Please connect your nowTV Box to enjoy some of your subscribed TV program on this device</string>
+    <string name="account_number">Now TV Account Number</string>
+    <string name="balance_account">Now Dollars account balance</string>
+    <string name="balance">Now Dollars  balance</string>
+    <string name="expire_date">Expire Date</string>
+    <string name="top_up_now_dollar">Top Up Now Dollars</string>
+    <string name="BPL_register_device">BRL Registered Device</string>
+    <string name="register_device">Registerd Device</string>
+    <string name="change_quota">Change Quota</string>
+    <string name="quota_reset_date">Quota Reset Date</string>
+    <string name="more_info">More Info</string>
+    <string name="log_out">Log out</string>
+
+    <!-- setting -->
+    <string name="setting_download_location">Download Location</string>
+    <string name="setting_language">Language 語言</string>
+    <string name="setting_english">English</string>
+    <string name="setting_chinese">中文</string>
+    <string name="setting_login_tips">Please login your nowID and connect now TV Box to enjoy some of your subscribed TV program on this device </string>
+    <string name="setting_now_id">Now ID</string>
+    <string name="setting_your_box">Your Box</string>
+    <string name="setting_phone_memory">Phone Memory</string>
+    <string name="setting_sdcard_memory">SDCard Memory</string>
+    <string name="setting_please_login">Please Login</string>
+    <string name="setting_push_notification">Push Notifications</string>
+    <string name="setting_service_notice">Service Notice</string>
+    <string name="setting_under_mobile">Play &amp; Download under mobile data network</string>
+    <string name="setting_dollar_balance">Now Dollars balance</string>
+    <string name="now_dollar_account_balance">Now Dollars account balance</string>
+    <string name="setting_expiry_date">Expiry date</string>
+    <string name="setting_top_up_dollar">Top Up Now Dollars</string>
+    <string name="setting_version">Version</string>
+
+    <string name="please_wait">please wait</string>
+
+    <string name="change_password">Change Password</string>
+    <string name="login_success">Login Success</string>
+    <string name="success">Success</string>
+    <string name="fail">Fail</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="log_out_now_id">Log out now ID</string>
+    <string name="logout_success">Logout Success</string>
+    <string name="change_password_failed">Change Password Failed</string>
+    <string name="change_password_success">Change Password Success</string>
+    <string name="resume_watching">Resume Watching</string>
+    <string name="time_left">%s mins left</string>
+    <string name="setting">Settings</string>
+    <string name="channel">Channel</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="bpl_setting">BPL Settings</string>
+    <string name="bpl_setting_hint">Device Managment, Match Alert</string>
+    <string name="more_apps">More Apps</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="content_not_subscribe"><![CDATA["<font color='#000000'>Content Not Subscribed</font>"]]></string>
+    <string name="sorry">Sorry!</string>
+    <string name="geo_err">now Player X is not available in your area.</string>
+    <string name="general_err">System busy. Please try again later.[%s]</string>
+    <string name="concurrent_playback_err">Each now ID user can only watch one  LIVE Channel or Program  on now Player X simultaneously. Please try again later.]</string>
+
+    <string name="not_subscribe_content"><![CDATA[Sorry! You have not subscribed to this LIVE Channel/Program yet. Please call our sale hotline at %s  & press \"2\" to subscribe.]]></string>
+    <string name="call_now">Call Now</string>
+    <string name="subscribe_number">2888 0008</string>
+    <string name="watch_list">Watchlist</string>
+    <string name="recommended">Recommended</string>
+    <string name="saved">Saved</string>
+    <string name="downloads">Downloads</string>
+    <string name="tv_recordings">TV Recordings</string>
+    <string name="history">History</string>
+    <string name="all">All</string>
+    <string name="watch_now">Watch now</string>
+    <string name="coming_up">Coming up</string>
+    <string name="ending_soon">Ending Soon</string>
+    <string name="remote">Remote</string>
+    <string name="number_pad">Number Pad</string>
+    <string name="favourite">Favourites</string>
+    <string name="add">add</string>
+    <string name="info">info</string>
+    <string name="back">back</string>
+    <string name="subs">subs</string>
+    <string name="audio">Audio</string>
+    <string name="ch">ch</string>
+    <string name="vol">vol</string>
+    <string name="program">Program</string>
+    <string name="movie">Movie</string>
+    <string name="ondemand">Ondemand</string>
+    <string name="top_search">Top Searches</string>
+    <string name="select_device">Tap to connect</string>
+    <string name="add_new_device">Add New Device</string>
+    <string name="connected">Connected</string>
+    <string name="edit">Edit</string>
+
+
+    <!-- Video -->
+    <string name="last_viewed_scene">Play from last viewed scene</string>
+    <string name="play_from_beginning">Play from beginning</string>
+    <string name="attention">Attention</string>
+    <string name="wifiToMobileNetwork">You have switched from a Wi-Fi network to mobile data network. Please check again.</string>
+    <string name="setting_network_data_please">Play/download under mobile data network" is closed in Settings, if you agree to watch or download the videos under a mobile data network, please change your settings. Users should keep track of their data usage and data charge.</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="hkid">HKID</string>
+    <string name="passport">Passport</string>
+    <string name="hkbr">HKBR</string>
+
+    <string name="ad_tips">You can skip to video in %d seconds</string>
+    <string name="skip_ad">SKIP_AD</string>
+    <string name="input_pin">Please enter the PIN</string>
+    <string name="need_login">The video requires you to log in</string>
+    <string name="please_login">Please login</string>
+
+    <string name="wait">Please Wait</string>
+
+    <string name="about">About</string>
+    <string name="episodes">Episodes</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="not_connected">Not connected</string>
+
+
+    <string name="title_subtitle">Subtitle</string>
+    <string name="title_audio">Audio</string>
+    <string name="synopsis">Synopsis</string>
+
+    <string name="net_err">Net error:</string>
+    <string name="play_now">Play Now</string>
+    <string name="watch_on_demand">Watch On Demand</string>
+    <string name="remove_from_list">Remove From List</string>
+    <string name="record_on_tv">Record On TV</string>
+    <string name="other_times">Other Times</string>
+    <string name="more_on_demand">More On Demand</string>
+    <string name="live">LIVE</string>
+
+    <string name="request_fail">Could not load the media details. Please try again later.</string>
+    <string name="input_code">Input code</string>
+    <string name="please_input_code">Please Input Code.</string>
+    <string name="disconnect_device">Disconnect Device</string>
+    <string name="rename_device">Rename Device</string>
+    <string name="please_input_device_name">Please input device name</string>
+    <string name="hellow_we_are_happy_to_help_you">Hello. We’re happy to help you.</string>
+    <string name="live_chat_content">You’ll be chatting with a representative who can assist you with sales and support in just a moment.</string>
+    <string name="t_and_c">Terms and Conditions</string>
+    <string name="t_and_c_content">Our intention in updating the terms was to communicate to  that we’d like to experiment with innovative advertising that feels appropriate on Instagram. Instead it was interpreted by many that we were going to sell your photos to othersin tn the without any compensation. This is not true and it is our mistake that this language is confusing. To be clear: it is not our intention to sell your photos. We are working on updated language in the terms to make sure this is clear. Our most im intention in updating the terms was to communicate thatdfg we’d like to experiment with innovative advertising that feels appropriate on Instagram. Instead it was interpreted byfgerg makes many that we were going to sell your photos to others for the without any compensation. This is not truedfg and it is our mistake that this language is confusing. To bedf clear: it is not our intention to sell your photos. We arefffd working on updated language in the terms to make sure this  is clear in the statement of the terms and conditions.</string>
+    <string name="agree_and_proceed">Argee and Proceed</string>
+    <string name="no_information_avaliable">No Information available.</string>
+    <string name="now">now</string>
+
+    <string name="today">Today %s</string>
+    <string name="tomorrow">Tomorrow %s</string>
+
+    <string name="ends">Ends</string>
+    <string name="directors">Directors</string>
+    <string name="actors">Actors</string>
+    <string name="languages">Languages</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="duration">Duration</string>
+    <string name="available_on">Available on</string>
+
+    <string name="mins">%s mins</string>
+
+
+    <string name="next_episode">Next Episode: </string>
+
+    <string name="rent_price">Rent $%s</string>
+    <string name="dollar">$%s</string>
+    <string name="trailer">Trailer</string>
+    <string name="alert_continue">Continue</string>
+    <string name="rent">Rent</string>
+    <string name="want_now">Watch Now</string>
+    <string name="thank_you">Thank You</string>
+    <string name="success_rent">You have successfully rented</string>
+    <string name="buy_alert">The program is available for viewing only on this mobile deivce [deivce name] and now Video Express First (CH 106) in TV. You can enjoy 48 hours unlimited viewing, which beings after you purchase the program. The purchase is non-refundable after confirmation.</string>
+    <string name="now_id_password">now ID Password</string>
+    <string name="enter_now_id_password">Please enter your now ID Password</string>
+    <string name="ve_remark" formatted="false">The program is available for viewing only on this mobile deivce %s and now Video Express First (CH 106) in TV. You can enjoy %s unlimited viewing, which beings after you purchase the program. The purchase is non-refundable after confirmation.</string>
+    <string name="ve_success_remark">Remarks: You can view your selected now Video Express First program anytime within the specified viewing period of such program staring from the time you place an order for the viewing of such program.</string>
+    <string name="ve_conditions"><u>Review Terms &amp; Conditions</u></string>
+    <string name="stream_quality_alert">Note: Video streaming quality is subject to the network conditioannel/Program  cannon of your devices. Any failure or delay in accessing the Now Player X service could be caused by the reliability and stability of your internet connection/mobile network, bandwidth availability as well as the capacity of PC/mobile devices you are using.</string>
+    <string name="only_screen_cast">This program is only available to broadcast on TV.  Cannot screen cast to you device (Now player X)</string>
+    <string name="cannot_be_played">The selected  LIVE Channel/Program  cannot be played temporarily. Please try again later. </string>
+    <string name="end_of_program">End of program </string>
+    <string name="end_of_the_program">This is the end of the program. </string>
+    <string name="connection_lost">Connection lost \nPlease check your internet or data connection.</string>
+    <string name="decode_busy">Your Now TV decoder is not in IPTV mode and we cannot cast your selected VOD/Live Channel to TV at the moment. Please quit your apps and switch to nowTV mode on your STB to try again!</string>
+    <string name="long_play_prompt">You have already watched this channel for 3 hours; please press "continue" to resume the live streaming, thank you!</string>
+    <string name="overtime_playing_alert">Overtime Playing Alert</string>
+    <string name="unauthorized_to_play">The movie you selected is not authorized to play on this mobile device.</string>
+    <string name="invalid_binding">To play Now Player X, please connect your Now ID with a TV decoder first.</string>
+    <string name="connect_now_id">Connect Now ID</string>
+    <string name="watchlist_is_full">Your Watchlist is full, please clean up before adding more items.</string>
+
+    <string name="not_support_hdd">Sorry, the current channel doesn\'t allow recording.</string>
+    <string name="TandCPath">en/tnc.txt</string>
+    <!--Video END-->
+    <string-array name="date">
+        <item>Today</item>
+        <item>Tomorrow</item>
+    </string-array>
+    <string name="na">NA</string>
+    <string name="done">Done</string>
+    <string name="all_channels">All Channels</string>
+    <string name="subscribed_channels">Subscribed Channels</string>
+    <string name="watch_on_device_channels">Watch On Device Channels</string>
+    <string name="press">Press</string>
+    <string name="to_add_favorite_list">to add your favourite programs to the Watchlist.</string>
+    <string name="exp_date">Exp.: %1$s</string>
+    <string name="video_express">Video Express</string>
+    <string name="name_this_machine">Please name this device</string>
+    <string name="invalid_machine_name_alert">Please re-name with 3-10 characters of letter and number. Special characters are not supported.</string>
+    <string name="re_enter">Re-enter</string>
+    <string name="on_device">On Device</string>
+    <string name="on_tv">On TV</string>
+    <string name="no_list_item">No List Item.</string>
+    <string name="no_history_item">No History Item.</string>
+    <string name="no_tv_record_item">No TV Record Item.</string>
+    <string name="no_download_item">No Download Item.</string>
+    <string name="no_save_item">No Save Item.</string>
+    <string name="no_recommended_item">No Recommended Item.</string>
+    <string name="tune_to_tv">Tune to TV</string>
+    <string name="add_to_watch_list">Add to Watch List</string>
+    <string name="restart">restart</string>
+    <string name="tv">TV</string>
+    <string name="record">record</string>
+    <string name="ready_to_cast">Ready to Cast</string>
+    <string name="connect">Connect</string>
+    <string name="offline_hint">No internet connection detected, you can only watch and manage your downloaded items.</string>
+    <string name="go_online">Go online</string>
+    <string name="offline_mode">Offline Mode</string>
+    <string name="mobile">Mobile</string>
+    <string name="pc">PC</string>
+    <string name="classification">Classification</string>
+    <string name="single_episode_or_series">Record this episode only or all coming episodes?</string>
+    <string name="this_episode_only">This episode only</string>
+    <string name="this_and_upcoming_episodes">This and upcoming episode</string>
+    <string name="failed">Failed</string>
+    <string name="scheduled">Scheduled</string>
+    <string name="watch_today">Watch Today</string>
+    <string name="watch_tmr">Watch Tomorrow</string>
+    <string name="episode_n">EP%1$d</string>
+    <string name="please_input_password">Please enter your Now ID password.</string>
+    <string name="please_confirm_age">Please confirm your age.</string>
+    <string name="connect_lost">Connect lost</string>
+    <string name="connect_lost_content">Please check your internet or mobile data connection.</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="waiting_to_download">Waiting to Download</string>
+    <string name="download_progress_description">Downloading %1$s / %2$s</string>
+    <string name="cannot_download_while_playing">You cannot download this program during playback</string>
+</resources>

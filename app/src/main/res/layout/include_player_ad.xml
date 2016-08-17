@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ad_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/tv_ad_countdown"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_ad_title"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/bg_ad"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ad_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:id="@+id/tv_ad_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_ad_title"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/bt_close_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            android:layout_toRightOf="@id/ll_ad_title"
+            android:background="@color/bg_ad"
+            android:src="@drawable/ic_close_white_36dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_skip"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@color/bg_ad"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_skip_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/themeColor" />
+
+            <Button
+                android:id="@+id/bt_ad_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:drawableRight="@drawable/ic_skip_next_grey300_36dp"
+                android:text="@string/skip_ad"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

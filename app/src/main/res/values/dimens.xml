@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="browse_menu_width">250dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="middle_padding">10dp</dimen>
+    <dimen name="horizontal_list_height">200dp</dimen>
+    <dimen name="large_padding">15dp</dimen>
+    <dimen name="xlarge_padding">20dp</dimen>
+    <dimen name="xxlarge_padding">25dp</dimen>
+    <dimen name="xxxlarge_padding">30dp</dimen>
+    <dimen name="xxxxlarge_padding">35dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="small_divide_height">1px</dimen>
+
+    <dimen name="bbuton_rounded_corner_radius">5dp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="tiny_text_size">12sp</dimen>
+    <dimen name="xtiny_text_size">10sp</dimen>
+    <dimen name="title_size">14sp</dimen>
+
+
+    <!--picker -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <dimen name="pickerview_textsize">20sp</dimen>
+    <dimen name="indicator_height">1dp</dimen>
+    <dimen name="toolbar_subtitle_size">12sp</dimen>
+    <dimen name="toolbar_title_size">14sp</dimen>
+
+
+</resources>
