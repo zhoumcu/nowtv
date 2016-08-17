@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.pccw.nowplayer"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- crash  catch -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <!-- crash catch end -->
+    <application
+        android:name=".PlayerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- crash catch -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="059e754e42c8160a12f38976851e2e15"/>
+        <!-- crash catch -->
+
+        <!-- Crashlytics -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="031170b2f2e65ff5a9cacc49741c1b7ef542c405"
+            />
+        <!-- Crashlytics -->
+
+        <activity
+            android:name=".activity.video.VodDetailActivity"
+            android:label="@string/on_demands"></activity>
+        <activity
+            android:name=".activity.video.ScreenCastActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen"></activity>
+        <activity
+            android:name=".activity.video.VideoPlayer"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen"/>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.OfflineActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.search.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.search.SearchDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NowTVWebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.TVGuideChannelDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.node.NodeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.node.NodeGridActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.mynow.LiveChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.mynow.LiveChatWebActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="pccw_now.db"/>
+        <meta-data
+            android:name="VERSION"
+            android:value="4"/>
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true"/>
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.pccw"/>
+
+        <activity
+            android:name=".activity.mynow.NowIDActivity"
+            android:label="@string/title_activity_now_id"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.settings.LanguageActivity"
+            android:label="@string/title_activity_language"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.settings.YourBoxActivity"
+            android:label="@string/title_activity_your_box"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.settings.NowDollarActivity"
+            android:label="@string/title_activity_now_dollar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.settings.NowDollarTopUpActivity"
+            android:label="@string/title_activity_now_dollar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.settings.DownloadLocationActivity"
+            android:label="@string/setting_download_location"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.mynow.LoginActvitiy"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.mynow.ChangePasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.mynow.ForgetPasswordActivity"/>
+        <activity
+            android:name=".activity.mynow.FSABindingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.mynow.CheckOutRegistionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.video.EPGVideoDetailActivity"
+            android:label="@string/tv_guide"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NormalWebActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.video.ParentalCtrlActivity"
+            android:label="@string/parental_control"/>
+        <activity
+            android:name=".activity.video.VEDollarPINActivity"
+            android:label=""/>
+        <activity
+            android:name=".activity.node.EpisodeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.video.ParentalCtrl1stActivity"
+            android:label="@string/parental_control"/>
+        <activity
+            android:name=".activity.video.OtherTimeActivity"
+            android:label="@string/tv_guide"/>
+        <activity android:name=".activity.settings.SettingActivity"/>
+    </application>
+
+</manifest>

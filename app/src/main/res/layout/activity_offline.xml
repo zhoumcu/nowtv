@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_tool_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/large_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/offline_hint" />
+
+            <Button
+                android:id="@+id/go_online"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/middle_padding"
+                android:layout_weight="1"
+                android:background="@drawable/white_round_click_bg"
+                android:paddingLeft="@dimen/middle_padding"
+                android:paddingRight="@dimen/middle_padding"
+                android:text="@string/go_online" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_gray" />
+
+        <include layout="@layout/view_edit_recycle_view" />
+    </LinearLayout>
+
+    <include layout="@layout/view_offline_alert" />
+</FrameLayout>

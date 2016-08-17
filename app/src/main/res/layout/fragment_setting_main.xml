@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:paddingTop="?attr/actionBarSize"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/setting_group_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_setting_language"
+                style="@style/setting_linear_style"
+                android:layout_height="47dp">
+
+                <TextView
+                    style="@style/setting_key_text_style"
+                    android:text="@string/setting_language" />
+
+                <TextView
+                    android:id="@+id/tv_setting_language_value"
+                    style="@style/setting_value_text_style"
+                    android:text="@string/setting_english" />
+
+                <ImageView style="@style/setting_arrow_style" />
+            </LinearLayout>
+
+            <View style="@style/setting_divide_style" />
+
+            <LinearLayout
+                android:id="@+id/ll_setting_under_mobile"
+                style="@style/setting_linear_style">
+
+                <TextView
+                    style="@style/setting_key_text_style"
+                    android:text="@string/setting_under_mobile" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_setting_under_mobile_value"
+                    style="@style/setting_switch_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </LinearLayout>
+
+            <View style="@style/setting_divide_style" />
+
+            <LinearLayout
+                android:id="@+id/ll_setting_push_notification"
+                style="@style/setting_linear_style">
+
+                <TextView
+                    style="@style/setting_key_text_style"
+                    android:text="@string/setting_push_notification" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_setting_push_notification_value"
+                    style="@style/setting_switch_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+            </LinearLayout>
+
+            <View style="@style/setting_divide_style" />
+
+            <LinearLayout
+                android:id="@+id/ll_setting_download_location"
+                style="@style/setting_linear_style">
+
+                <TextView
+                    style="@style/setting_key_text_style"
+                    android:text="@string/setting_download_location" />
+
+                <TextView
+                    android:id="@+id/tv_setting_download_location_value"
+                    style="@style/setting_value_text_style"
+                    android:text="@string/setting_phone_memory" />
+
+                <ImageView style="@style/setting_arrow_style" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_now_id"
+            style="@style/setting_linear_style"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                style="@style/setting_key_text_style"
+                android:text="@string/setting_now_id" />
+
+            <TextView
+                android:id="@+id/tv_setting_now_id_value"
+                style="@style/setting_value_text_style"
+                android:text="@string/setting_please_login" />
+
+            <ImageView style="@style/setting_arrow_style" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_setting_login_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:text="@string/setting_login_tips"
+            android:textColor="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_setting_your_box"
+            style="@style/setting_linear_style"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                style="@style/setting_key_text_style"
+                android:text="@string/setting_your_box" />
+
+            <TextView
+                android:id="@+id/tv_setting_your_box_value"
+                style="@style/setting_value_text_style" />
+
+            <ImageView style="@style/setting_arrow_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_now_dollar"
+            style="@style/setting_linear_style"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                style="@style/setting_key_text_style"
+                android:text="@string/title_activity_now_dollar" />
+
+
+            <TextView
+                android:id="@+id/tv_setting_now_dollar"
+                style="@style/setting_value_text_style" />
+
+            <ImageView style="@style/setting_arrow_style" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_setting_service_notice"
+            style="@style/setting_linear_style"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                style="@style/setting_key_text_style"
+                android:text="@string/setting_service_notice" />
+
+
+            <ImageView style="@style/setting_arrow_style" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_setting_version"
+            style="@style/setting_linear_style"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/setting_group_color">
+
+            <TextView
+                style="@style/setting_key_text_style"
+                android:text="@string/setting_version" />
+
+            <TextView
+                android:id="@+id/tv_setting_version_value"
+                style="@style/setting_value_text_style"
+                android:textColor="@color/white" />
+
+            <ImageView
+                style="@style/setting_arrow_style"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

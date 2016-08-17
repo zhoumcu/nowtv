@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_bg_image" />
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_vod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_cover"
+                        android:layout_width="128dp"
+                        android:layout_height="192dp"
+                        android:scaleType="fitXY" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toEndOf="@+id/iv_cover"
+                        android:layout_toRightOf="@+id/iv_cover">
+
+                        <TextView
+                            android:id="@+id/tv_detail_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/iv_detail_logo"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <ImageView
+                            android:id="@+id/iv_detail_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_above="@+id/ll_options"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="fitStart" />
+
+                        <include layout="@layout/vod_option_layout"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_about"
+                        style="@style/radio_tab"
+                        android:text="@string/about" />
+
+                    <RadioButton
+                        android:id="@+id/rb_episodes"
+                        style="@style/radio_tab"
+                        android:text="@string/episodes" />
+
+                    <RadioButton
+                        android:id="@+id/rb_recommended"
+                        style="@style/radio_tab"
+                        android:text="@string/recommended" />
+                </RadioGroup>
+
+                <FrameLayout
+                    android:id="@+id/fl_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:paddingTop="20dp"></FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_toolbar" />
+
+</FrameLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="windows_background">#1d1d1d</color>
+    <color name="themeColor">#191919</color>
+    <color name="themeColorDark">#212121</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#ffff00</color>
+    <color name="azure">#00a0e9</color>
+
+
+    <color name="setting_value">#f38e26</color>
+
+    <color name="press_color">#33ffffff</color>
+    <color name="setting_group_color">#2b2b2b</color>
+    <color name="dialog">#33000000</color>
+
+    <color name="black_50">#88000000</color>
+    <color name="grey">#888888</color>
+    <color name="black_90">#E5000000</color>
+    <color name="grey_50">#70909090</color>
+    <color name="light_grey">#545861</color>
+    <color name="now_grey">#909090</color>
+
+    <color name="tab_ins_background"> #545861</color>
+
+    <color name="orange">#f38e26</color>
+    <color name="dark_orange">#e6611e</color>
+    <color name="bright_grey">#97999c</color>
+    <color name="dark_grey">#222222</color>
+    <color name="tab_bar_stroke">#434343</color>
+
+    <color name="bbutton_default">#ffffffff</color>
+
+    <color name="bbutton_default_edge">#ffcccccc</color>
+
+    <color name="bbutton_default_pressed">#ffebebeb</color>
+
+    <color name="bbutton_default_pressed_edge">#ffadadad</color>
+
+    <color name="bbutton_default_disabled">#a5ffffff</color>
+
+    <color name="bbutton_default_disabled_edge">#a5cccccc</color>
+
+
+    <color name="more_color">#929292</color>
+    <color name="bg_ad">#3367686a</color>
+    <color name="text_sub_ad">#67686a</color>
+    <color name="blue">#1A758A</color>
+    <color name="ios_blue">#007aff</color>
+    <color name="gray">#909090</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#43A047</color>
+    <color name="drak_blue">#0D47A1</color>
+    <color name="white_50">#88ffffff</color>
+
+
+
+
+
+
+
+
+
+
+
+    <!--picker-->
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#a8a8a8</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">@color/white</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="divider_gray">#545861</color>
+    <color name="channel_bg_color">#3c3c3c</color>
+</resources>

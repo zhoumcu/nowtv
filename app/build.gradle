@@ -1,0 +1,94 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // The Fabric Gradle plugin uses an open ended version to react
+        // quickly to Android tooling updates
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+ext {
+    supportLibVersion = '23.3.0'
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    signingConfigs {
+        test {
+            keyAlias 'npx'
+            keyPassword 'pccw1234'
+            storeFile file('./test-key.jks')
+            storePassword 'pccw1234'
+        }
+    }
+    defaultConfig {
+        applicationId "com.pccw.nowplayer"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.test
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+    maven { url "https://jitpack.io" }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile(name: 'nmaf', ext: 'aar')
+    compile(name: 'npx', ext: 'aar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.android.support:recyclerview-v7:${supportLibVersion}"
+    compile 'com.android.support:multidex:1.0.1'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.1@aar') {
+        transitive = true;
+    }
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.kyleduo.switchbutton:library:1.3.4'
+    compile 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.satyan:sugar:1.5'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6@aar'
+    compile 'com.pgyersdk:sdk:2.2.2'
+    compile 'com.github.pedrovgs:draggablepanel:1.9'
+    compile 'org.jdeferred:jdeferred-android-aar:1.2.4'
+}

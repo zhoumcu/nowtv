@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+                                   xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:background="@drawable/bg_toolbar"
+                                   android:elevation="0dp"
+                                   android:minHeight="?attr/actionBarSize">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/nowplayer_logo"
+        android:visibility="gone"/>
+    <include layout="@layout/view_now_title" />
+
+
+    <LinearLayout
+        android:id="@+id/addition_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/middle_padding"
+        android:paddingRight="@dimen/middle_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/setting_linear_style"
+            android:background="@null">
+
+            <TextView
+                style="@style/setting_key_text_style"
+                android:text="@string/now_dollar_account_balance" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_linear_style">
+
+            <TextView
+                style="@style/setting_key_text_style"
+                android:text="@string/setting_dollar_balance" />
+
+            <TextView
+                android:id="@+id/tv_setting_dollar_balance"
+                style="@style/setting_value_text_style"
+                android:layout_marginRight="19dp" />
+        </LinearLayout>
+
+        <View style="@style/setting_divide_style" />
+
+        <LinearLayout style="@style/setting_linear_style">
+
+            <TextView
+                style="@style/setting_key_text_style"
+                android:text="@string/setting_expiry_date" />
+
+            <TextView
+                android:id="@+id/tv_setting_expiry_date"
+                style="@style/setting_value_text_style"
+                android:layout_marginRight="19dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_top_up_dollar"
+            android:id="@+id/bt_top_up"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/bg_round_selector"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/view_tool_bar" />
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingLeft="@dimen/middle_padding"
+    android:paddingRight="@dimen/middle_padding"
+    android:paddingTop="@dimen/small_padding">
+
+    <ImageView
+        android:id="@+id/like_channel"
+        android:layout_width="19dp"
+        android:layout_height="18dp" />
+
+    <ImageView
+        android:id="@+id/channel_icon"
+        android:layout_width="90dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/channel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white" />
+
+    <include layout="@layout/view_subscribe" />
+</LinearLayout>

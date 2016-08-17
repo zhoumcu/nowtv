@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_tool_bar" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/xxxlarge_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/middle_padding"
+                android:drawableTop="@drawable/live_chat"
+                android:gravity="center_horizontal"
+                android:text="@string/live_chat"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/xxxxlarge_padding"
+                android:text="@string/hellow_we_are_happy_to_help_you"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/large_padding"
+                android:gravity="center"
+                android:text="@string/live_chat_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxxxlarge_padding"
+                android:text="@string/t_and_c"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_padding">
+
+                <TextView
+                    android:id="@+id/t_and_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="false"
+                    android:maxLines="8"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:paddingTop="@dimen/small_padding"
+                    android:scrollbars="vertical"
+                    android:text="@string/t_and_c_content"
+                    android:textColor="@color/now_grey" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/t_and_c_black_mask" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/xxxxlarge_padding"
+                android:background="@drawable/white_round_click_bg"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text="@string/agree_and_proceed" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_progress" />
+</RelativeLayout>

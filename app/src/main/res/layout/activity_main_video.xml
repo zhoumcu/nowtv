@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fl_video_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_now_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+
+
+        <com.pccw.nowplayer.activity.video.TargetVideo
+            android:id="@+id/rl_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.pccw.nowplayer.activity.video.TargetVideo>
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.pccw.nowplayer.activity.video.BPLResult
+                android:id="@+id/ll_bpl_result"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"></com.pccw.nowplayer.activity.video.BPLResult>
+
+
+            <com.pccw.nowplayer.activity.video.PlayControl
+                android:id="@+id/ll_play_control"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"></com.pccw.nowplayer.activity.video.PlayControl>
+
+
+            <com.pccw.nowplayer.activity.video.NextEpisode
+                android:id="@+id/rl_next_episode"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="#11FFFFFF"></com.pccw.nowplayer.activity.video.NextEpisode>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <com.pccw.nowplayer.activity.video.ScreenCastActivity
+        android:id="@+id/fl_screen_cast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include layout="@layout/view_video_toolbar" />
+</FrameLayout>

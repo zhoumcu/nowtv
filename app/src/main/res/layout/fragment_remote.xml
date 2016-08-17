@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/large_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_guide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/ic_tv_guide"
+                    android:gravity="center"
+                    android:text="@string/tv_guide"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/ic_remote_home"
+                    android:gravity="center"
+                    android:text="@string/home"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/on_demand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/ic_remote_demand"
+                    android:gravity="center"
+                    android:text="@string/on_demand"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/large_padding">
+
+                <TextView
+                    android:id="@+id/my_now"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/ic_remote_my_now"
+                    android:gravity="center"
+                    android:text="@string/my_now"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:id="@+id/up"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_remote_up" />
+
+                <TextView
+                    android:id="@+id/add"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/ic_remote_add"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/large_padding">
+
+                <ImageView
+                    android:id="@+id/left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_remote_left" />
+
+                <ImageView
+                    android:id="@+id/ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_remote_ok" />
+
+                <ImageView
+                    android:id="@+id/right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_remote_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/large_padding">
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/ic_remote_info"
+                    android:gravity="center"
+                    android:text="@string/info"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:id="@+id/down"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_remote_down" />
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/ic_remote_back"
+                    android:gravity="center"
+                    android:text="@string/back"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/middle_padding">
+
+                <View
+                    android:id="@+id/red"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/middle_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_red" />
+
+                <View
+                    android:id="@+id/green"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/middle_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_green" />
+
+                <View
+                    android:id="@+id/yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/middle_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_yellow" />
+
+                <View
+                    android:id="@+id/blue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/middle_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/small_padding">
+
+                <ImageView
+                    android:id="@+id/key_quick_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xxxxlarge_padding"
+                    android:layout_weight="1"
+                    android:src="@drawable/key_quick_back" />
+
+                <ImageView
+                    android:id="@+id/key_play"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xxlarge_padding"
+                    android:layout_marginRight="@dimen/xxlarge_padding"
+                    android:layout_weight="1"
+                    android:src="@drawable/key_play" />
+
+                <ImageView
+                    android:id="@+id/key_quick_play"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/xxxxlarge_padding"
+                    android:layout_weight="1"
+                    android:src="@drawable/key_quick_play" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/middle_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:id="@+id/key_restart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xxxxlarge_padding"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/key_restart"
+                    android:gravity="center"
+                    android:text="@string/restart"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/key_exit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xxlarge_padding"
+                    android:layout_marginRight="@dimen/xxlarge_padding"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/key_exit"
+                    android:gravity="center"
+                    android:text="@string/exit"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/key_record"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/xxxxlarge_padding"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/key_record"
+                    android:gravity="center"
+                    android:text="@string/record"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/middle_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:id="@+id/key_now"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xxxxlarge_padding"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/key_now"
+                    android:gravity="center"
+                    android:text="@string/now"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xxlarge_padding"
+                    android:layout_marginRight="@dimen/xxlarge_padding"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/key_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/xxxxlarge_padding"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableTop="@drawable/key_tv"
+                    android:gravity="center"
+                    android:text="@string/tv"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/mask_black_trans_top_to_bottom" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item >
+		<shape ><padding android:top="20dp" android:bottom="20dp" android:left="50dp" android:right="50dp" /></shape>
+	</item>
+	<item android:bottom="2dp" android:right="-3dp" android:left="-3dp" android:top="2dp" >
+		<shape>
+
+<padding android:top="20dp" android:bottom="20dp" android:right="30dp" android:left="30dp"></padding>
+			<solid android:color="@android:color/transparent" />
+		</shape>
+	</item>
+
+
+</layer-list>
